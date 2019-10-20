@@ -15,7 +15,7 @@ pythonのモジュールであるpyfirmata2を用いてArduinoを動かすため
 
 - [Lチカ](test/test_digitalwrite.py)
 - [センサの値の読み取り](test/test_analogread.py)
-- [デジタルピンの読み取り](test_digitalread.py)
+- [デジタルピンの読み取り](test/test_digitalread.py)
 - [PWM(LED)](test/test_pwm.py)
 
 
