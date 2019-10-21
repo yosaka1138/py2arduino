@@ -11,7 +11,7 @@ def main():
     board = Arduino(Arduino.AUTODETECT)
     # サンプリング周期を10msに固定
     board.samplingOn(10)
-    # pin1 をアナログピンのinputに設定
+    # pin0 をアナログピンのinputに設定
     analog_0 = set_pin(board, pin=0, mode="i", data="analog")
     time.sleep(2)
     while True:

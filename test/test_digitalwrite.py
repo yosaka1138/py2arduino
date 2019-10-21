@@ -9,15 +9,15 @@ from py2arduino import set_pin
 def main():
     # 操作するArduinoを決定
     board = Arduino(Arduino.AUTODETECT)
-    # digital_0をデジタルピンのoutputに設定
-    digital_0 = set_pin(board, pin=8, mode="output", data="digital")
+    # digital_8をデジタルピンのoutputに設定
+    digital_8 = set_pin(board, pin=8, mode="output", data="digital")
     # time.sleep(2)
     while True:
         # LEDを点灯
-        digital_0.high()
+        digital_8.high()
         time.sleep(0.5)
         # LEDを消灯
-        digital_0.low()
+        digital_8.low()
         time.sleep(0.5)
 
 if __name__ == "__main__":

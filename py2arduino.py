@@ -29,19 +29,9 @@ class set_pin():
         self.mode = mode
         self.data = data
         self.sampling_rate = 100    # 50 Hz
-        # self.socket = self.board.get_pin("a:{}:i".format(self.pin))
-        # self.board.samplingOn(1000/self.sampling_rate)
         self.socket = self.board.get_pin("{}:{}:{}".format(self.data[0], self.pin, self.mode[0]))
         if self.mode == "input":
             self.socket.enable_reporting()
-
-    def get_value(self):
-        raw_value = self.socket.read()
-        if raw_value == None:
-            return -1
-        else:
-            casted_value = int(raw_value * 1024)
-            return casted_value
     
     def analogread(self):
         analog_value = self.socket.read()

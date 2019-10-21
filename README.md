@@ -24,7 +24,7 @@ pythonのモジュールであるpyfirmata2を用いてArduinoを動かすため
 
 ```bash
 > cd py2arduino
-> sudo pip3 install -e
+> sudo pip3 install -e .
 > sudo pip3 install -r requirements.txt
 > sudo python3 setup.py develop
 ```
